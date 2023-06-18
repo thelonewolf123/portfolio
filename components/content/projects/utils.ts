@@ -10,5 +10,17 @@ export const projects = [
         platform: 'Web',
         stack: 'VueJs, Javascript, Python, CSS.',
         delay: 0.1
+    },
+    {
+        title: 'Portfolio',
+        description: `Experience a seamless and visually stunning portfolio showcase with Next.js and NextUI — an impressive combination of cutting-edge frontend technologies.`,
+        img: '/demo.png',
+        href: '/projects/portfolio',
+        preview: 'https://harishkumar.pro',
+        github: 'https://github.com/thelonewolf123/portfolio',
+        alt: 'Projects',
+        platform: 'Web',
+        stack: 'NextJs, NextUI, Typescript, CSS.',
+        delay: 0.1
     }
 ]

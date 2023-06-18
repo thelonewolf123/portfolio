@@ -5,7 +5,6 @@ import { GithubIcon } from '../../icons/github-icon'
 import { LinkedinIcon } from '../../icons/linkedin-icon'
 import { SectionAnimation } from '../../animations/section'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
 import { LinkIcon } from '../../icons/link-icon'
 import { GridContainer } from '../../styles/grid'
 
@@ -126,7 +125,7 @@ export const Home = () => {
                                 2022 - Present
                             </Text>
                             <Text span>
-                                Work as a Software Engineer at Klenty soft Inc.
+                                Work as a Software Developer at Klenty soft Inc.
                             </Text>
                         </Box>
                     </Box>
