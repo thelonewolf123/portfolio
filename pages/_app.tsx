@@ -5,6 +5,7 @@ import { createTheme, NextUIProvider } from '@nextui-org/react'
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 import { AnimatePresence } from 'framer-motion'
 import { MainLayout } from '../components/layout/main-layout'
+import { Analytics } from '@vercel/analytics/react'
 
 const lightTheme = createTheme({
     type: 'light',
@@ -49,6 +50,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                     </MainLayout>
                 </AnimatePresence>
             </NextUIProvider>
+            <Analytics />
         </NextThemesProvider>
     )
 }
