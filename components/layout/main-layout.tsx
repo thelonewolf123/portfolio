@@ -16,9 +16,9 @@ export const MainLayout = ({ children }: Props) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-                <meta name="description" content="Mauricio's homepage" />
+                <meta name="description" content="Harish Kumar's homepage" />
                 <meta name="author" content="Harish Kumar" />
-                <meta name="author" content="siumauricio" />
+                <meta name="author" content="lonewolf_hk" />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                 <link
                     rel="shortcut icon"
@@ -27,8 +27,8 @@ export const MainLayout = ({ children }: Props) => {
                 />
                 <meta name="twitter:title" content="Harish Kumar" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:site" content="@siumauricio" />
-                <meta name="twitter:creator" content="@siumauricio" />
+                <meta name="twitter:site" content="@lonewolf_hk" />
+                <meta name="twitter:creator" content="@lonewolf_hk" />
                 <meta property="og:site_name" content="Harish Kumar" />
                 <meta name="og:title" content="Harish Kumar" />
                 <meta property="og:type" content="website" />
