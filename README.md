@@ -7,7 +7,7 @@ This is a template for NextJS and NextUI.
 [NextJS](https://nextjs.org/)
 [NextUI](https://nextui.org/)
 
-You can see the demo here: https://harishkumar.pro/
+You can see the demo here: [https://harishkumar.pro/](https://harishkumar.pro/)
 
 ![Dashboard Dark Mode](./public/demo.png)
 
