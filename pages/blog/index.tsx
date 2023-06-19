@@ -129,9 +129,15 @@ export const getStaticProps: GetStaticProps = async () => {
         })
     )
 
+    frontMatters.sort((a, b) => {
+        const aDate = new Date(a.date as string)
+        const bDate = new Date(b.date as string)
+        return aDate.getMilliseconds() > bDate.getMilliseconds() ? 1 : -1
+    })
+
     return {
         props: {
-            sources: JSON.parse(JSON.stringify(frontMatters))
+            sources: frontMatters
         }
     }
 }

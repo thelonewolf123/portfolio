@@ -1,0 +1,41 @@
+---
+title: 'Journey of building android python editor'
+description: 'In this post, I am going to share how I built my python code editor and interpreter with flask and svelte.'
+date: '2022-06-17'
+---
+
+### Stroy about building android python editor
+
+In this post, I'm going to share how I built my python code editor and interpreter.
+
+### Why a code editor?
+
+I felt other ideas like the to-do app and expense tracker are too generic.
+
+### How it all begun?
+
+It all started when one of my juniors asked for help regarding his freelancing project. He was working on a flutter app, but I don't know flutter, so I thought this might be a good chance to try something new.
+
+### Step 1: tutorials
+
+I started to watch some YouTube videos on flutter app development. At first, I was a bit skeptical because I had never used dart before, but When I created my first app, I immediately fell in love with the language and flutter's widget-based architecture.
+
+### Step 2: building
+
+First, I built some generic apps like a clock and a to-do app, but I'm not satisfied with the results. I felt like I wasn't pushing my limits, so I was decided to build something new and different that showcases my skills and a good challenge for me. Finally, I decided to build a python compiler. There are so many of them out there, but I thought building one by myself would be a good challenge for me.
+
+### Step 3: let's start building
+
+I started to work on the project, the first roadblock I faced was there was no code editor component for flutter. So I decided to build one by myself, but soon realized I wasn't as good as I thought in flutter, I started to learn it only a week ago so decided to look for other options. I came up with a plan to add a web view to flutter app and render a web technology-based code editor inside. My first choice is Monaco editor, the same code editor used in VS code. Unfortunately, it doesn't have proper touch support. So I settled for code mirror. It's a lightweight code editor with support for touch devices. I have used svelte to build a simple SPA then I have compiled it into a single Html file, that way I can easily render it from assets instead of using any file hosting.
+
+### Step 4: roadblocks
+
+The next issue is interpreter, I found some android libraries like chaquopy, which is used to run python code on android devices, but that's boring. I wanted to make things a bit more complicated. So I decided to write my API to run the python code on a server and return the result to my app. Here the biggest issue is security, allowing a user to execute code on a server and keep one user's execution environment separate from the other is a bit more complicated than what I anticipated. So I decided to use a serverless function and leave the security stuff to AWS. I wrote a simple code engine and deployed it on AWS lambda.
+
+### Step 5: end
+
+I have connected both front-end and back-end then everything worked as expected, that's it.
+
+#### PS:
+
+I was simplified weeks of the development process and endless stack-overflow searches, it wasn't easy but I learned a lot, so it's worth the time.
