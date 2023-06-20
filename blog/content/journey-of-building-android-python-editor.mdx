@@ -1,41 +1,51 @@
 ---
-title: 'Journey of building android python editor'
-description: 'In this post, I am going to share how I built my python code editor and interpreter with flask and svelte.'
+title: 'The Story Behind the Android Python Editor'
+description: 'Join me as I share the exciting tale of how I built my own Python code editor and interpreter using the Android Flutter framework.'
 date: '2022-06-17'
 ---
 
-### Stroy about building android python editor
+### The Story Behind the Android Python Editor
 
-In this post, I'm going to share how I built my python code editor and interpreter.
+Let me take you on a thrilling journey of how I made my very own Python code editor and interpreter using the Android Flutter framework.
 
-### Why a code editor?
+### Why Build a Code Editor?
 
-I felt other ideas like the to-do app and expense tracker are too generic.
+While common app ideas like to-do lists and expense trackers are fine, I wanted to challenge myself and do something unique.
 
-### How it all begun?
+### The Beginning of the Adventure
 
-It all started when one of my juniors asked for help regarding his freelancing project. He was working on a flutter app, but I don't know flutter, so I thought this might be a good chance to try something new.
+It all started when a junior of mine asked for help with his freelance project. He was working on a Flutter app, a technology I wasn't familiar with. But I saw this as an opportunity to try something new and exciting.
 
-### Step 1: tutorials
+### Step 1: Learning the Basics
 
-I started to watch some YouTube videos on flutter app development. At first, I was a bit skeptical because I had never used dart before, but When I created my first app, I immediately fell in love with the language and flutter's widget-based architecture.
+To get started, I watched Flutter app development tutorials on YouTube. At first, I was unsure because I had never used Dart before. However, when I created my first app, I fell in love with the language and Flutter's way of building apps.
 
-### Step 2: building
+### Step 2: Laying the Foundation
 
-First, I built some generic apps like a clock and a to-do app, but I'm not satisfied with the results. I felt like I wasn't pushing my limits, so I was decided to build something new and different that showcases my skills and a good challenge for me. Finally, I decided to build a python compiler. There are so many of them out there, but I thought building one by myself would be a good challenge for me.
+I began by creating some simple apps like a clock and a to-do list. But I wanted a bigger challenge to showcase my skills. That's when I decided to build my own Python compiler. Many already existed, but building one from scratch was a thrilling challenge.
 
-### Step 3: let's start building
+### Step 3: Let's Get Building
 
-I started to work on the project, the first roadblock I faced was there was no code editor component for flutter. So I decided to build one by myself, but soon realized I wasn't as good as I thought in flutter, I started to learn it only a week ago so decided to look for other options. I came up with a plan to add a web view to flutter app and render a web technology-based code editor inside. My first choice is Monaco editor, the same code editor used in VS code. Unfortunately, it doesn't have proper touch support. So I settled for code mirror. It's a lightweight code editor with support for touch devices. I have used svelte to build a simple SPA then I have compiled it into a single Html file, that way I can easily render it from assets instead of using any file hosting.
+As I worked on the project, I faced my first hurdle—Flutter didn't have a built-in code editor. Determined to find a solution, I decided to create my own. But I quickly realized that I wasn't as skilled in Flutter as I thought. So, I explored other options. I came up with a plan to integrate a web view into my app and use a web-based code editor. I chose CodeMirror, a lightweight editor that works well on touch devices. To make it work, I used Svelte to build a simple web app, and then I compiled it into a single file that could be easily used in my app.
 
-### Step 4: roadblocks
+### Step 4: Overcoming Challenges
 
-The next issue is interpreter, I found some android libraries like chaquopy, which is used to run python code on android devices, but that's boring. I wanted to make things a bit more complicated. So I decided to write my API to run the python code on a server and return the result to my app. Here the biggest issue is security, allowing a user to execute code on a server and keep one user's execution environment separate from the other is a bit more complicated than what I anticipated. So I decided to use a serverless function and leave the security stuff to AWS. I wrote a simple code engine and deployed it on AWS lambda.
+The next challenge was building the interpreter. There were existing libraries for running Python code on Android, but I wanted to make it more interesting. So, I created my own API to run the code on a server and get the results back. Security was a big concern, as I needed to make sure each user's code was separate and safe. To handle that, I used a serverless function on AWS Lambda, which took care of the security.
 
-### Step 5: end
+### Step 5: Reaching the Finish Line
 
-I have connected both front-end and back-end then everything worked as expected, that's it.
+With everything connected and working smoothly, my project was a success. I had built my Android Python editor!
+
+### Resources
+
+-   Project Url - https://github.com/thelonewolf123/cyebrkrypts_flutter
+-   Code engine - https://github.com/thelonewolf123/cyberkrypts-code-engine
+-   Flutter docs - https://docs.flutter.dev/
+-   Monaco editor - https://microsoft.github.io/monaco-editor/
+-   Code mirror - https://codemirror.net/
+-   Chaquopy - https://chaquo.com/chaquopy/
+-   AWS lambda - https://aws.amazon.com/lambda/
 
 #### PS:
 
-I was simplified weeks of the development process and endless stack-overflow searches, it wasn't easy but I learned a lot, so it's worth the time.
+This project was no easy task. It took weeks of work and lots of searching for answers. But the knowledge and experience I gained made it all worthwhile.

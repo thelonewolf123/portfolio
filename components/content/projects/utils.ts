@@ -22,5 +22,17 @@ export const projects = [
         platform: 'Web',
         stack: 'NextJs, NextUI, Typescript, CSS.',
         delay: 0.1
+    },
+    {
+        title: 'EFI Editor',
+        description: `A GUI-based command generator for efibootmgr, designed for Linux systems. Simplifying the transition from Windows to Linux, it provides a user-friendly interface for command-line tools.`,
+        img: '/efi-editor.png',
+        href: '/projects/efi-editor',
+        preview: '#',
+        github: 'https://github.com/thelonewolf123/efi-editor',
+        alt: 'Projects',
+        platform: 'Desktop',
+        stack: 'Java, JavaFX, FXML.',
+        delay: 0.1
     }
 ]
