@@ -93,16 +93,18 @@ const Index = ({ project }: Props) => {
                     <Text span>{project.stack}</Text>
                 </Flex>
 
-                <Link
-                    block
-                    color="primary"
-                    css={{ gap: '$6' }}
-                    href={project.preview}
-                    target="_blank"
-                >
-                    Live preview{' '}
-                    <LinkIcon width={21} height={22} color="$primary" />
-                </Link>
+                {project.preview ? (
+                    <Link
+                        block
+                        color="primary"
+                        css={{ gap: '$6' }}
+                        href={project.preview}
+                        target="_blank"
+                    >
+                        Live preview{' '}
+                        <LinkIcon width={21} height={22} color="$primary" />
+                    </Link>
+                ) : null}
 
                 <Link
                     block
