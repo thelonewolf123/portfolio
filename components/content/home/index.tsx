@@ -1,11 +1,13 @@
-import { Text, Avatar, Card, Button, Link } from '@nextui-org/react'
+import NextLink from 'next/link'
+
+import { Avatar, Button, Card, Link, Text } from '@nextui-org/react'
+
+import { SectionAnimation } from '../../animations/section'
+import { GithubIcon } from '../../icons/github-icon'
+import { LinkIcon } from '../../icons/link-icon'
+import { LinkedinIcon } from '../../icons/linkedin-icon'
 import { Box } from '../../styles/box'
 import { Flex } from '../../styles/flex'
-import { GithubIcon } from '../../icons/github-icon'
-import { LinkedinIcon } from '../../icons/linkedin-icon'
-import { SectionAnimation } from '../../animations/section'
-import NextLink from 'next/link'
-import { LinkIcon } from '../../icons/link-icon'
 import { GridContainer } from '../../styles/grid'
 
 export const Home = () => {
@@ -122,7 +124,7 @@ export const Home = () => {
                             css={{ textIndent: '-3.4em', pl: '3.4em' }}
                         >
                             <Text span css={{ mr: '1em' }} weight={'bold'}>
-                                2022 - Present
+                                2023 - Present
                             </Text>
                             <Text span>
                                 Work as a Software Developer at Klenty soft Inc.
