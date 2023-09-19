@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
+
 import { Footer } from '../footer'
 import { NavbarWrapper } from '../navbar'
 import { Box } from '../styles/box'
@@ -19,7 +20,6 @@ export const MainLayout = ({ children }: Props) => {
                 <meta name="description" content="Harish Kumar's homepage" />
                 <meta name="author" content="Harish Kumar" />
                 <meta name="author" content="lonewolf_hk" />
-                <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                 <link
                     rel="shortcut icon"
                     href="/favicon.ico"

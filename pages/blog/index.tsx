@@ -1,15 +1,17 @@
+import fs from 'fs'
 import { GetStaticProps } from 'next'
 import { serialize } from 'next-mdx-remote/serialize'
+import Link from 'next/link'
 import path from 'path'
-import fs from 'fs'
 import React, { useState } from 'react'
 import remarkGfm from 'remark-gfm'
-import { Box } from '../../components/styles/box'
+
 import { FormElement, Input, Text } from '@nextui-org/react'
-import { Flex } from '../../components/styles/flex'
-import { BlogLayout } from '../../components/layout/blog-layout'
+
 import { SearchIcon } from '../../components/icons/search-icon'
-import Link from 'next/link'
+import { BlogLayout } from '../../components/layout/blog-layout'
+import { Box } from '../../components/styles/box'
+import { Flex } from '../../components/styles/flex'
 import { timeAgo } from '../../components/utils/timeago'
 
 type Frontmatter = {
@@ -132,7 +134,7 @@ export const getStaticProps: GetStaticProps = async () => {
     frontMatters.sort((a, b) => {
         const aDate = new Date(a.date as string)
         const bDate = new Date(b.date as string)
-        return aDate.getMilliseconds() > bDate.getMilliseconds() ? 1 : -1
+        return aDate.valueOf() > bDate.valueOf() ? -1 : 1
     })
 
     return {
