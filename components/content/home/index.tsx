@@ -127,7 +127,8 @@ export const Home = () => {
                                 2023 - Nov 2023
                             </Text>
                             <Text span>
-                                Work as a Software Developer at Klenty soft Inc.
+                                Worked as a Software Developer at Klenty soft
+                                Inc.
                             </Text>
                         </Box>
                     </Box>
