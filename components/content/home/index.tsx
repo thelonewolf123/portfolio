@@ -124,7 +124,7 @@ export const Home = () => {
                             css={{ textIndent: '-3.4em', pl: '3.4em' }}
                         >
                             <Text span css={{ mr: '1em' }} weight={'bold'}>
-                                2023 - Present
+                                2023 - Nov 2023
                             </Text>
                             <Text span>
                                 Work as a Software Developer at Klenty soft Inc.
